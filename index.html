@@ -7,53 +7,67 @@
 </head>
 
 <body>
-  <h1>Resume</h1>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#workhistory">Work History</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#mailingaddress">Mailing Address</a></li>
+      </ul>
+    </nav>
+    <h1>Resume</h1>
     <section>
-        <h2>Tony Alicea</h2>
-          <p>
-            Coder, UX Designer, and Instructor
-          </p>
-            <dl>
-              <dt>Website</dt>
-              <dd>google.com</dd>
-              <dt>Phone</dt>
-              <dd>555-555-1111</dd>
-              <dt>Twitter</dt>
-              <dd>@anthonypalicea</dd>
-            </dl>
+      <h2>Tony Alicea</h2>
+      <p>
+        Coder, UX Designer, and Instructor
+      </p>
+      <dl>
+        <dt>Website</dt>
+        <dd><a href="https://www.google.com" target="_blank">google.com</a></dd>
+        <dt>Phone</dt>
+        <dd>555-555-1111</dd>
+        <dt>Twitter</dt>
+        <dd><a href="https://twitter.com/AnthonyPAlicea">@anthonypalicea</a></dd>
+        <dt>Youtube</dt>
+        <dd><a href="https://youtube.com/tonyalicea">@anthonypalicea</a></dd>
+      </dl>
     </section>
-    <article>
-        <header>
-          <h2>About Me</h2>
-        </header>
-          <p>Hi! I'm Tony Alicea and I'm happy to have you as a student in my courses.
-          <aside>Don't imitate, understand!</aside>
-          </p>
-          <footer>Contact me</footer>
+    <article id="aboutme">
+      <header>
+        <h2>About Me</h2>
+      </header>
+      <p>Hi! I'm Tony Alicea and I'm <em>happy</em> to have you as a student in my courses.
+      <aside><small>Don't imitate, understand!</small></aside>
+      </p>
+      <footer>Contact me</footer>
     </article>
-    <section>
+    <section id="services">
       <h2>Services</h2>
-        <ul>
-          <li>Web Development</li>
-          <li>App Development</li>
-          <li>Training</li>
-        </ul>
+      <ul>
+        <li>Web Development</li>
+        <li>App Development</li>
+        <li>Training</li>
+      </ul>
     </section>
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
-        <ul>
-          <li>HTML
-            Markup your content with semantic HTML.
-          </li>
-          <li>CSS
-            Layout your content visually for multiple devices.
-          </li>
-          <li>JavaScript
-            Make your content more interactive, and build web applications.
-          </li>
-        </ul>
+      <ul>
+        <li>HTML
+          Markup your content with semantic HTML.
+        </li>
+        <li>CSS
+          Layout your content visually for multiple devices.
+        </li>
+        <li>JavaScript
+          Make your content more interactive, and build web applications.
+        </li>
+      </ul>
     </section>
-    <section>
+    <section id="workhistory">
       <h2>Work History</h2>
       <table>
         <thead>
@@ -70,12 +84,12 @@
             <th>3 years</th>
           </tr>
           <tr>
-             <th>Web Developer</th>
+            <th>Web Developer</th>
             <th>ABC Corp</th>
             <th>5 years</th>
           </tr>
           <tr>
-             <th>Carpet Cleaner</th>
+            <th>Carpet Cleaner</th>
             <th>123 Inc.</th>
             <th>2 years</th>
           </tr>
@@ -88,25 +102,53 @@
         </tfoot>
       </table>
     </section>
-    <section>
+    <section id="portfolio">
+      <!--Needs pictures
+      or put url for the portfolio-->
       <h2>Portfolio</h2>
     </section>
-    <section>
+    <section id="testimonials">
       <h2>Testimonials</h2>
-        <blockquote>
-          <p>I love Tony's courses!</p>
-        </blockquote>
-        <blockquote>
-          <p>Tony's courses helped me get a job.</p>
-        </blockquote>
+      <blockquote>
+        <p>I love Tony's courses!</p>
+      </blockquote>
+      <blockquote>
+        <p>Tony's courses <strong>helped me get a job.</strong></p>
+      </blockquote>
     </section>
-    <section>
+    <section id="mailingaddress">
       <h2>Mailing Address</h2>
-        <address>
-          111 Main St.
-          Somewhere, NY 33333
-        </address>
+      <address>
+        111 Main St. <br />
+        Somewhere, NY 33333
+      </address>
     </section>
+    <section id="contactme">
+      <h2>Contact Me</h2>
+      <form action="dosomething.html" method="POST">
+        <p>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </p>
+        <p>
+          <label for="whycontacting">Why Contacting</label>
+          <select id="whycontacting" name="whycontacting">
+            <option value="jobinterview">Job Interview</option>
+            <option value="needcontractor">Need Contractor</option>
+          </select>
+        </p>
+        <p>
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" rows="3"></textarea>
+        </p>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 </body>
 
 </html>
