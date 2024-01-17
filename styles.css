@@ -1,0 +1,3 @@
+section:not(#testimonial){
+  font-style: italic;
+}
