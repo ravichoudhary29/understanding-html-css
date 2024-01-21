@@ -41,9 +41,12 @@
       <header>
         <h2>About Me</h2>
       </header>
+      <img src="images/mypicture.JPG" class="my-picture"/>
       <p>Hi! I'm Tony Alicea and I'm <em>happy</em> to have you as a student in my courses.
       </p>
-      <aside><p><small>Don't imitate, understand!</small></p></aside>
+      <aside>
+        <p><small>Don't imitate, understand!</small></p>
+      </aside>
       <p>Hello</p>
       <footer>Contact me</footer>
     </article>
@@ -71,7 +74,7 @@
     </section>
     <section id="workhistory">
       <h2>Work History</h2>
-      <table class="resume-list">
+      <ol class="resume-list">
         <thead>
           <tr>
             <th>Role</th>
@@ -102,11 +105,10 @@
             <td>10 years</td>
           </tr>
         </tfoot>
-      </table>
+      </ol>
     </section>
     <section id="portfolio">
-      <!--Needs pictures
-      or put url for the portfolio-->
+      <img src="https://picsum.photos/200/300" alt="A field of wheat in a beautiful clear day." />
       <h2>Portfolio</h2>
     </section>
     <section id="testimonials">
@@ -116,6 +118,9 @@
       </blockquote>
       <blockquote>
         <p>Tony's courses <strong>helped me get a job.</strong></p>
+      </blockquote>
+      <blockquote>
+        <p>I love learning about HTML &amp; CSS!</p>
       </blockquote>
     </section>
     <section id="mailingaddress">
@@ -128,27 +133,27 @@
     <section id="contactme">
       <h2>Contact Me</h2>
       <form action="dosomething.html" method="POST">
-        <p>
-          <label for="name">Name</label>
+        <p class="field">
+          <label for="name" class="label-standard">Name</label>
           <input type="text" name="name" id="name" required />
         </p>
-        <p>
-          <label for="email">Email</label>
+        <p class="field">
+          <label for="email" class="label-standard">Email</label>
           <input type="email" name="email" id="email" />
         </p>
-        <p>
-          <label for="whycontacting">Why Contacting</label>
+        <p class="field">
+          <label for="whycontacting" class="label-standard">Why Contacting</label>
           <select id="whycontacting" name="whycontacting">
             <option value="jobinterview">Job Interview</option>
             <option value="needcontractor">Need Contractor</option>
           </select>
         </p>
-        <p>
-          <label for="comments">Comments</label>
+        <p class="field">
+          <label for="comments" class="label-standard">Comments</label>
           <textarea id="comments" name="comments" rows="3"></textarea>
         </p>
         <p>
-        <fieldset>
+        <fieldset class="resume-fieldset">
           <legend>Best Contact time</legend>
 
           <label for="contacttime1">Morning</label>
