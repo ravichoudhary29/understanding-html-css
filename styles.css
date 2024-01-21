@@ -14,6 +14,8 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
+  margin-inline: 0;
 }
 
 nav ul li {
@@ -35,15 +37,26 @@ main {
   margin-block: 0;
 }
 
+.flex-header,
+.motto {
+  flex-basis: 100%;
+}
+
 #aboutme {
   background-color: black;
   color: white;
   display: flex;
+  flex-wrap: wrap;
+}
+
+#aboutme aside {
+  order: 10;
 }
 
 #testimonials {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
 #testimonials blockquote {
@@ -53,6 +66,15 @@ main {
   padding-block: 0;
   margin-inline: 0;
   margin-block: 0.5rem;
+}
+
+blockquote.featured {
+  order: -1;
+  flex: 1 0 auto;
+}
+
+#testimonials h2 {
+  order: -2;
 }
 
 .resume-fieldset {
