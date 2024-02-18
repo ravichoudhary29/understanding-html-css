@@ -54,6 +54,13 @@ main {
   order: 10;
 }
 
+#workhistory table,
+thead,
+tbody,
+tr {
+  outline: 1px solid black;
+}
+
 #portfolio {
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
@@ -67,9 +74,6 @@ main {
   max-inline-size: 120px;
 }
 
-img.anchor{
-  
-}
 
 #testimonials {
   display: flex;
